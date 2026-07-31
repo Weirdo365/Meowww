@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #ffe6eb; /* Soft pink aesthetic */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden; /* Prevents scrolling when the button runs away */
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.5);
+    max-width: 90%;
+    width: 450px;
+    transition: opacity 0.5s ease;
+}
+
+h1 {
+    color: #ff4d6d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.gif-container img {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* Important for the running button */
+    height: 50px;
+}
+
+button {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
+}
+
+#yes-btn:hover {
+    background-color: #ff2a55;
+    transform: scale(1.1);
+}
+
+#no-btn {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    border: 2px solid #dee2e6;
+    position: absolute;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.signature {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4d6d;
+    font-weight: 600;
+}
